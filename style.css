@@ -1,21 +1,21 @@
 body {
     background-color: rgb(188, 125, 224); 
-    background-image: linear-gradient(to right, rgba(181, 111, 238, 0.877) , rgb(81, 6, 143));
+    background-image: linear-gradient(to right, rgba(246, 235, 255, 0.877) , rgb(125, 45, 190));
     color: white;
 }
 
 
 #mySidenav a{
     position:absolute;
-    left: -275px;
+    left: -250px;
     transition: 0.3s;
     padding: 35px;
-    width: 350px;
+    width: 320px;
     text-decoration: none;
     font-size: 45px;
     color: rgb(255, 255, 255);
     border-radius: 0 5px 5px 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Sofia', cursive;
     text-transform: lowercase;
     text-align: center;
 
@@ -24,6 +24,11 @@ body {
 #mySidenav a:hover {
     left: 0;
 }
+
+#mySidenav a.active {
+    left: 0;
+}
+
 
 #saphira {
     top: 50px;
@@ -45,16 +50,43 @@ body {
     background-color: rgba(20, 1, 29, 0.432);
 }
 
-
-
-
+div.right {
+    position:fixed;
+    right: 800px;
+    width: 100px;
+    bottom: 75px;
+}
 
 
 h1 {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Rancho', cursive;
+    font-size: 80px;
+    line-height: 100px;
+    white-space:nowrap;
 }
 
-p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+p.intro {
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 25px;
+    justify-items: right;
 }
 
+
+h2 {
+    font-family: 'Rancho', cursive;
+}
+
+img.profile {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+    
+}
+
+.animate__animated.animate__rubberBand{
+    animation-iteration-count:infinite;
+    
+}
