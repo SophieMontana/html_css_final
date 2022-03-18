@@ -6,13 +6,14 @@ body {
 
 
 #mySidenav a{
-    position:absolute;
+    display:block;
+    position:fixed;
     left: -250px;
     transition: 0.3s;
     padding: 35px;
-    width: 320px;
+    width: 300px;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
     border-radius: 0 5px 5px 0;
     font-family: 'Sofia', cursive;
@@ -51,10 +52,10 @@ body {
 }
 
 div.right {
-    position:fixed;
-    right: 800px;
+    position:relative;
+    right: 500px;
     width: 100px;
-    bottom: 75px;
+    bottom: 0px;
 }
 
 
@@ -89,4 +90,53 @@ img.profile {
 .animate__animated.animate__rubberBand{
     animation-iteration-count:infinite;
     
+}
+
+body:before {
+    content:"";
+    position:fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    z-index:-1; 
+    background-color: rgb(188, 125, 224); 
+    background-image: linear-gradient(to right, rgba(246, 235, 255, 0.877) , rgb(125, 45, 190));
+
+}
+
+div.recipe {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.kt {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.bonus {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.buddha
+{
+    text-align: center;
+}
+
+ol li {
+    text-align: center;
+    list-style-position: inside;
+}
+
+div.hobbies {
+    display: flex;
+    float:right;
+    text-align: center;
+}
+
+div.contact {
+    font-size: 30px;
+    color:blueviolet;
 }
